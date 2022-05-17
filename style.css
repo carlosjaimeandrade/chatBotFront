@@ -1,0 +1,103 @@
+body {
+    background-color: rgba(0, 0, 0, 0.233)
+}
+
+.chat-container{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    display: flex;
+    align-items: flex-end;
+    animation: fadeChat 1.4s linear;
+}
+.chat-container >div{
+    margin: 8px;
+}
+
+.chat-header h4{
+    margin: 0; 
+}
+
+.chat-main p{
+    margin: 0; 
+    font-size: 17px;
+}
+
+.chat-img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    background-color: rgb(0, 178, 248);
+}
+
+.chat-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.chat-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+    border-radius:5px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    box-shadow: 1px 0px 8px 1px rgba(0, 0, 0, 0.075);
+    width: 380px;
+}
+
+.chat-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-header{
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+
+}
+
+.chat-header span{
+    cursor: pointer;
+}
+
+.chat-content >div{
+    margin: 10px;
+
+}
+
+.chat-header > *{
+    color: rgb(158, 158, 158);
+}
+
+.chat-main{
+    margin: 10px 0px;
+}
+
+.chat-footer{
+    width: 100%;
+}
+
+
+.chat-footer button{
+    width: 100%;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+@keyframes fadeChat {
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
